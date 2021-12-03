@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+***REMOVED***<wb-module deploy-name="twitter-connector">
+***REMOVED******REMOVED***<wb-resource deploy-path="/" source-path="/webContent" tag="defaultRootSource"/>
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_hd"/>
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_ws"/>
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_wsproc"/>
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_dataClasses"/>
+***REMOVED******REMOVED***<property name="context-root" value="twitter-connector"/>
+***REMOVED******REMOVED***<property name="java-output-path" value="/twitter-connector/classes"/>
+***REMOVED***</wb-module>
+</project-modules>
