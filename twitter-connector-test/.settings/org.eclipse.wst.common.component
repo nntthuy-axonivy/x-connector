@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-***REMOVED******REMOVED***
-***REMOVED***<wb-module deploy-name="twitter-connector-test">
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<wb-resource deploy-path="/" source-path="/webContent" tag="defaultRootSource"/>
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_hd"/>
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_ws"/>
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_wsproc"/>
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_dataClasses"/>
-***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_test"/>
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<property name="context-root" value="twitter-connector-test"/>
-***REMOVED******REMOVED******REMOVED******REMOVED***
-***REMOVED******REMOVED***<property name="java-output-path" value="/twitter-connector-test/classes"/>
 ***REMOVED******REMOVED******REMOVED***
-***REMOVED***</wb-module>
 ***REMOVED***
+***REMOVED***<wb-module deploy-name="twitter-connector-test">
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***
+***REMOVED******REMOVED***<wb-resource deploy-path="/" source-path="/webContent" tag="defaultRootSource"/>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_hd"/>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_wsproc"/>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_dataClasses"/>
+***REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***<wb-resource deploy-path="/WEB-INF/classes" source-path="/src_test"/>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***
+***REMOVED******REMOVED***<property name="context-root" value="twitter-connector-test"/>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED******REMOVED***
+***REMOVED******REMOVED***<property name="java-output-path" value="/twitter-connector-test/classes"/>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***
+***REMOVED***
+***REMOVED***</wb-module>
+***REMOVED******REMOVED***
+
 </project-modules>

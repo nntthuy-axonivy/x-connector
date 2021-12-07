@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><classpath>
   <classpathentry kind="src" path="src">
 ***REMOVED***<attributes>
 ***REMOVED***  <attribute name="optional" value="true"/>
@@ -10,11 +9,7 @@
 ***REMOVED***  <attribute name="optional" value="true"/>
 ***REMOVED***</attributes>
   </classpathentry>
-  <classpathentry kind="src" path="src_ws">
-***REMOVED***<attributes>
-***REMOVED***  <attribute name="optional" value="true"/>
-***REMOVED***</attributes>
-  </classpathentry>
+  
   <classpathentry kind="src" path="src_wsproc">
 ***REMOVED***<attributes>
 ***REMOVED***  <attribute name="optional" value="true"/>

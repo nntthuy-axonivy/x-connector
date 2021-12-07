@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<faces-config
-***REMOVED***xmlns="http://java.sun.com/xml/ns/javaee"
-***REMOVED***xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-***REMOVED***xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
-***REMOVED***version="2.1">
-
-</faces-config>

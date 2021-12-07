@@ -1,0 +1,13 @@
+RestClients:
+  #Twitter API v2 available endpoints
+  Twitter API (Twitter API v2):
+***REMOVED***UUID: 0b74edb8-5459-4ccc-aac7-505531e06398
+***REMOVED***Url: ${ivy.var.Twitter-connector.Url}
+***REMOVED***Icon: res:/webContent/icons/twitter.png
+***REMOVED***Features:
+***REMOVED***- ch.ivyteam.ivy.rest.client.mapper.JsonFeature
+***REMOVED***- com.twitter.auth.OAuth2Feature
+***REMOVED***Properties:
+***REMOVED***  API.key: ${ivy.var.Twitter-connector.Key}
+***REMOVED***  API.secretKey: ${ivy.var.Twitter-connector.SecretKey}
+***REMOVED***  AUTH.baseUri: https://api.twitter.com/oauth2
