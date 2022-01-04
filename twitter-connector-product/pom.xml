@@ -4,7 +4,6 @@
   <artifactId>twitter-connector-product</artifactId>
   <version>9.4.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-
   <build>
 ***REMOVED***<plugins>
 ***REMOVED***  <plugin>
@@ -22,6 +21,31 @@
 ***REMOVED******REMOVED******REMOVED***  <descriptors>
 ***REMOVED******REMOVED******REMOVED******REMOVED***<descriptor>zip.xml</descriptor>
 ***REMOVED******REMOVED******REMOVED***  </descriptors>
+***REMOVED******REMOVED******REMOVED***</configuration>
+***REMOVED******REMOVED***  </execution>
+***REMOVED******REMOVED***</executions>
+***REMOVED***  </plugin>
+***REMOVED***  <plugin>
+***REMOVED******REMOVED***<groupId>org.apache.maven.plugins</groupId>
+***REMOVED******REMOVED***<artifactId>maven-antrun-plugin</artifactId>
+***REMOVED******REMOVED***<executions>
+***REMOVED******REMOVED***  <execution>
+***REMOVED******REMOVED******REMOVED***<phase>prepare-package</phase>
+***REMOVED******REMOVED******REMOVED***<goals>
+***REMOVED******REMOVED******REMOVED***  <goal>run</goal>
+***REMOVED******REMOVED******REMOVED***</goals>
+***REMOVED******REMOVED******REMOVED***<configuration>
+***REMOVED******REMOVED******REMOVED***  <tasks>
+***REMOVED******REMOVED******REMOVED******REMOVED***<unzip dest="">
+***REMOVED******REMOVED******REMOVED******REMOVED***  <fileset dir="./..">
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***<include name="**/lib/generated/rest/jaxRsClient_*.jar" />
+***REMOVED******REMOVED******REMOVED******REMOVED***  </fileset>
+***REMOVED******REMOVED******REMOVED******REMOVED***  <patternset>
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***<include name="**/openapi.json" />
+***REMOVED******REMOVED******REMOVED******REMOVED***  </patternset>
+***REMOVED******REMOVED******REMOVED******REMOVED***  <mapper type="flatten" />
+***REMOVED******REMOVED******REMOVED******REMOVED***</unzip>
+***REMOVED******REMOVED******REMOVED***  </tasks>
 ***REMOVED******REMOVED******REMOVED***</configuration>
 ***REMOVED******REMOVED***  </execution>
 ***REMOVED******REMOVED***</executions>
