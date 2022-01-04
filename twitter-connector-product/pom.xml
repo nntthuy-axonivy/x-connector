@@ -36,8 +36,8 @@
 ***REMOVED******REMOVED******REMOVED***</goals>
 ***REMOVED******REMOVED******REMOVED***<configuration>
 ***REMOVED******REMOVED******REMOVED***  <tasks>
-***REMOVED******REMOVED******REMOVED******REMOVED***<unzip dest="">
-***REMOVED******REMOVED******REMOVED******REMOVED***  <fileset dir="./..">
+***REMOVED******REMOVED******REMOVED******REMOVED***<unzip dest="${basedir}">
+***REMOVED******REMOVED******REMOVED******REMOVED***  <fileset dir="${basedir}/..">
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***<include name="**/lib/generated/rest/jaxRsClient_*.jar" />
 ***REMOVED******REMOVED******REMOVED******REMOVED***  </fileset>
 ***REMOVED******REMOVED******REMOVED******REMOVED***  <patternset>
