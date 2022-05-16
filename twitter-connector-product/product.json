@@ -13,7 +13,7 @@
 ***REMOVED******REMOVED***],
 ***REMOVED******REMOVED***"repositories": [
 ***REMOVED******REMOVED***  {
-***REMOVED******REMOVED******REMOVED***"id": "axonivy.public",
+***REMOVED******REMOVED******REMOVED***"id": "maven.axonivy.com",
 ***REMOVED******REMOVED******REMOVED***"url": "https://maven.axonivy.com",
 ***REMOVED******REMOVED******REMOVED***"snapshots": {
 ***REMOVED******REMOVED******REMOVED***  "enabled": "true"
@@ -35,7 +35,7 @@
 ***REMOVED******REMOVED***],
 ***REMOVED******REMOVED***"repositories": [
 ***REMOVED******REMOVED***  {
-***REMOVED******REMOVED******REMOVED***"id": "axonivy.public",
+***REMOVED******REMOVED******REMOVED***"id": "maven.axonivy.com",
 ***REMOVED******REMOVED******REMOVED***"url": "https://maven.axonivy.com",
 ***REMOVED******REMOVED******REMOVED***"snapshots": {
 ***REMOVED******REMOVED******REMOVED***  "enabled": "true"
