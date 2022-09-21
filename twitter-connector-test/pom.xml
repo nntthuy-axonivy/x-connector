@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axonivy.connector.twitter</groupId>
   <artifactId>twitter-connector-test</artifactId>
-  <version>9.4.0-SNAPSHOT</version>
+  <version>9.4.0</version>
   <packaging>iar</packaging>
   <dependencies>
 ***REMOVED***<dependency>
@@ -15,7 +15,7 @@
 ***REMOVED***<dependency>
 ***REMOVED***  <groupId>com.axonivy.ivy.test</groupId>
 ***REMOVED***  <artifactId>unit-tester</artifactId>
-***REMOVED***  <version>9.2.0</version>
+***REMOVED***  <version>9.4.1</version>
 ***REMOVED***  <scope>test</scope>
 ***REMOVED***</dependency>
   </dependencies>
