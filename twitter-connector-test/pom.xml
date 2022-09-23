@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+***REMOVED***xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axonivy.connector.twitter</groupId>
   <artifactId>twitter-connector-test</artifactId>
@@ -21,17 +22,6 @@
   </dependencies>
   <build>
 ***REMOVED***<testSourceDirectory>src_test</testSourceDirectory>
-***REMOVED***<plugins>
-***REMOVED***  <plugin>
-***REMOVED******REMOVED***<groupId>com.axonivy.ivy.ci</groupId>
-***REMOVED******REMOVED***<artifactId>project-build-plugin</artifactId>
-***REMOVED******REMOVED***<version>9.3.1</version>
-***REMOVED******REMOVED***<extensions>true</extensions>
-***REMOVED******REMOVED***<configuration>
-***REMOVED******REMOVED***  <ivyVersion>9.4.0</ivyVersion>
-***REMOVED******REMOVED***</configuration>
-***REMOVED***  </plugin>
-***REMOVED***</plugins>
 ***REMOVED***<pluginManagement>
 ***REMOVED***  <plugins>
 ***REMOVED******REMOVED***<plugin>
@@ -43,5 +33,16 @@
 ***REMOVED******REMOVED***</plugin>
 ***REMOVED***  </plugins>
 ***REMOVED***</pluginManagement>
+***REMOVED***<plugins>
+***REMOVED***  <plugin>
+***REMOVED******REMOVED***<groupId>com.axonivy.ivy.ci</groupId>
+***REMOVED******REMOVED***<artifactId>project-build-plugin</artifactId>
+***REMOVED******REMOVED***<version>9.4.1</version>
+***REMOVED******REMOVED***<extensions>true</extensions>
+***REMOVED******REMOVED***<configuration>
+***REMOVED******REMOVED***  <ivyVersion>9.4.0</ivyVersion>
+***REMOVED******REMOVED***</configuration>
+***REMOVED***  </plugin>
+***REMOVED***</plugins>
   </build>
 </project>
