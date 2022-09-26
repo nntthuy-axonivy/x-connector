@@ -1,0 +1,19 @@
+# == Custom Fields Information ==
+# 
+# You can define here your project custom fields.
+#
+CustomFields:
+  Tasks:
+  #***REMOVED***MyTaskCustomField:
+  #***REMOVED***  Label: My task custom field
+  #***REMOVED***  Description: This new task custom field can be used to ...
+  #***REMOVED***  Type: STRING***REMOVED******REMOVED***
+  Cases:
+  #***REMOVED***MyCaseCustomField:
+  #***REMOVED***  Label: My case custom field
+  #***REMOVED***  Description: This new case custom field can be used to ...
+  #***REMOVED***  Type: STRING***REMOVED******REMOVED***
+  Starts:
+#***REMOVED***MyStartCustomField:
+#***REMOVED***  Label: My start custom field
+#***REMOVED***  Description: This new start custom field can be used to ...
