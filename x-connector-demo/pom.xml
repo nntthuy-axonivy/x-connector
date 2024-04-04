@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+***REMOVED***xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.axonivy.connector.x</groupId>
+  <artifactId>x-connector-demo</artifactId>
+  <version>10.0.1-SNAPSHOT</version>
+  <packaging>iar</packaging>
+  <dependencies>
+***REMOVED***<dependency>
+***REMOVED***  <groupId>com.axonivy.connector.x</groupId>
+***REMOVED***  <artifactId>x-connector</artifactId>
+***REMOVED***  <version>${project.version}</version>
+***REMOVED***  <type>iar</type>
+***REMOVED***</dependency>
+  </dependencies>
+  <build>
+***REMOVED***<plugins>
+***REMOVED***  <plugin>
+***REMOVED******REMOVED***<groupId>com.axonivy.ivy.ci</groupId>
+***REMOVED******REMOVED***<artifactId>project-build-plugin</artifactId>
+***REMOVED******REMOVED***<version>10.0.6</version>
+***REMOVED******REMOVED***<extensions>true</extensions>
+***REMOVED***  </plugin>
+***REMOVED***</plugins>
+  </build>
+</project>
