@@ -5,8 +5,8 @@
 ***REMOVED***  "data": {
 ***REMOVED******REMOVED***"projects": [
 ***REMOVED******REMOVED***  {
-***REMOVED******REMOVED******REMOVED***"groupId": "com.axonivy.connector.twitter",
-***REMOVED******REMOVED******REMOVED***"artifactId": "twitter-connector-demo",
+***REMOVED******REMOVED******REMOVED***"groupId": "com.axonivy.connector.x",
+***REMOVED******REMOVED******REMOVED***"artifactId": "x-connector-demo",
 ***REMOVED******REMOVED******REMOVED***"version": "${version}",
 ***REMOVED******REMOVED******REMOVED***"type": "iar"
 ***REMOVED******REMOVED***  }
@@ -27,8 +27,8 @@
 ***REMOVED***  "data": {
 ***REMOVED******REMOVED***"dependencies": [
 ***REMOVED******REMOVED***  {
-***REMOVED******REMOVED******REMOVED***"groupId": "com.axonivy.connector.twitter",
-***REMOVED******REMOVED******REMOVED***"artifactId": "twitter-connector",
+***REMOVED******REMOVED******REMOVED***"groupId": "com.axonivy.connector.x",
+***REMOVED******REMOVED******REMOVED***"artifactId": "x-connector",
 ***REMOVED******REMOVED******REMOVED***"version": "${version}",
 ***REMOVED******REMOVED******REMOVED***"type": "iar"
 ***REMOVED******REMOVED***  }
