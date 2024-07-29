@@ -35,7 +35,7 @@
 ***REMOVED******REMOVED******REMOVED***  <goal>run</goal>
 ***REMOVED******REMOVED******REMOVED***</goals>
 ***REMOVED******REMOVED******REMOVED***<configuration>
-***REMOVED******REMOVED******REMOVED***  <tasks>
+***REMOVED******REMOVED******REMOVED***  <target>
 ***REMOVED******REMOVED******REMOVED******REMOVED***<unzip dest="${basedir}">
 ***REMOVED******REMOVED******REMOVED******REMOVED***  <fileset dir="${basedir}/..">
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***<include name="**/lib/generated/rest/jaxRsClient_*.jar" />
@@ -45,7 +45,7 @@
 ***REMOVED******REMOVED******REMOVED******REMOVED***  </patternset>
 ***REMOVED******REMOVED******REMOVED******REMOVED***  <mapper type="flatten" />
 ***REMOVED******REMOVED******REMOVED******REMOVED***</unzip>
-***REMOVED******REMOVED******REMOVED***  </tasks>
+***REMOVED******REMOVED******REMOVED***  </target>
 ***REMOVED******REMOVED******REMOVED***</configuration>
 ***REMOVED******REMOVED***  </execution>
 ***REMOVED******REMOVED***</executions>

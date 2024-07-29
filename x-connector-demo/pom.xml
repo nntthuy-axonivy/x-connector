@@ -5,6 +5,19 @@
   <artifactId>x-connector-demo</artifactId>
   <version>10.0.3-SNAPSHOT</version>
   <packaging>iar</packaging>
+  <properties>
+***REMOVED***<project.build.plugin.version>10.0.16</project.build.plugin.version>
+  </properties>
+  <pluginRepositories>
+***REMOVED***<!-- Snapshot releases are available via sonatype.org -->
+***REMOVED***<pluginRepository>
+***REMOVED***  <id>sonatype</id>
+***REMOVED***  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+***REMOVED***  <snapshots>
+***REMOVED******REMOVED***<updatePolicy>always</updatePolicy>
+***REMOVED***  </snapshots>
+***REMOVED***</pluginRepository>
+  </pluginRepositories>
   <dependencies>
 ***REMOVED***<dependency>
 ***REMOVED***  <groupId>com.axonivy.connector.x</groupId>
@@ -18,7 +31,7 @@
 ***REMOVED***  <plugin>
 ***REMOVED******REMOVED***<groupId>com.axonivy.ivy.ci</groupId>
 ***REMOVED******REMOVED***<artifactId>project-build-plugin</artifactId>
-***REMOVED******REMOVED***<version>10.0.6</version>
+***REMOVED******REMOVED***<version>${project.build.plugin.version}</version>
 ***REMOVED******REMOVED***<extensions>true</extensions>
 ***REMOVED***  </plugin>
 ***REMOVED***</plugins>
