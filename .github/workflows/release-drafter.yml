@@ -1,0 +1,26 @@
+name: Release Drafter
+on:
+  push:
+***REMOVED***branches:
+***REMOVED***  - master
+  pull_request:
+***REMOVED***types: [opened, reopened, synchronize]
+  workflow_dispatch:
+***REMOVED***inputs:
+***REMOVED***  version:
+***REMOVED******REMOVED***description: 'Release version'
+***REMOVED******REMOVED***required: true
+***REMOVED***  prerelease:
+***REMOVED******REMOVED***description: 'Is this a prerelease?'
+***REMOVED******REMOVED***required: false
+***REMOVED******REMOVED***default: false
+***REMOVED******REMOVED***type: boolean
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  build:
+***REMOVED***uses: axonivy-market/github-workflows/.github/workflows/release-drafter.yml@v4
+***REMOVED***with:
+***REMOVED***  version: ${{ github.event.inputs.version }}
+***REMOVED***  prerelease: ${{ github.event.inputs.prerelease }}
