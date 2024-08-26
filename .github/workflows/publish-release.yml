@@ -1,0 +1,18 @@
+name: Publish Release
+
+on:
+  push:
+***REMOVED***tags:
+***REMOVED***  - "v*.*.*"
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  build:
+***REMOVED***uses: axonivy-market/github-workflows/.github/workflows/publish-release.yml@v4
+***REMOVED***# The 'publish_release' input parameter is used to control whether the release should be published automatically.
+***REMOVED***# Uncomment and set to 'false' if you want to prevent the release from being published immediately.
+***REMOVED***# with:
+***REMOVED***#   publish_release: false
