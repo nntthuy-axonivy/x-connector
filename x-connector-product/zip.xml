@@ -12,7 +12,7 @@
 ***REMOVED***  <includes>
 ***REMOVED******REMOVED***<include>product.json</include>
 ***REMOVED******REMOVED***<include>openapi.json</include>
-***REMOVED******REMOVED***<include>README.md</include>
+***REMOVED******REMOVED***<include>README*.md</include>
 ***REMOVED******REMOVED***<include>**/*.png</include>
 ***REMOVED***  </includes>
 ***REMOVED***</fileSet>
