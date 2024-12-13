@@ -1,0 +1,23 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "simpleName" : "XData",
+  "namespace" : "com.axonivy.connector.x",
+  "isBusinessCaseData" : false,
+  "fields" : [ {
+***REMOVED***"name" : "username",
+***REMOVED***"type" : "String",
+***REMOVED***"modifiers" : [ "PERSISTENT" ]
+  }, {
+***REMOVED***"name" : "user",
+***REMOVED***"type" : "com.twitter.api.client.User",
+***REMOVED***"modifiers" : [ "PERSISTENT" ]
+  }, {
+***REMOVED***"name" : "query",
+***REMOVED***"type" : "String",
+***REMOVED***"modifiers" : [ "PERSISTENT" ]
+  }, {
+***REMOVED***"name" : "tweets",
+***REMOVED***"type" : "java.util.List<com.twitter.api.client.Tweet>",
+***REMOVED***"modifiers" : [ "PERSISTENT" ]
+  } ]
+}

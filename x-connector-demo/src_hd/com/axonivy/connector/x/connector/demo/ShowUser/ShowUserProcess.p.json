@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "17D806AC43051BEB",
   "kind" : "HTML_DIALOG",
   "config" : {
@@ -10,10 +10,10 @@
 ***REMOVED***  "type" : "HtmlDialogStart",
 ***REMOVED***  "name" : "start(String)",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"callSignature" : "start",
+***REMOVED******REMOVED***"signature" : "start",
 ***REMOVED******REMOVED***"input" : {
 ***REMOVED******REMOVED***  "params" : [
-***REMOVED******REMOVED******REMOVED***{ "name" : "query", "type" : "String" }
+***REMOVED******REMOVED******REMOVED***{ "name" : "query", "type" : "String", "desc" : "" }
 ***REMOVED******REMOVED***  ],
 ***REMOVED******REMOVED***  "map" : {
 ***REMOVED******REMOVED******REMOVED***"out.query" : "param.query"
@@ -23,9 +23,11 @@
 ***REMOVED***  },
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 96, "y" : 64 },
-***REMOVED******REMOVED***"labelOffset" : { "x" : 13, "y" : 45 }
+***REMOVED******REMOVED***"labelOffset" : { "y" : 45 }
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f7", "to" : "f6" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f7", "to" : "f6" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f1",
 ***REMOVED***  "type" : "HtmlDialogEnd",
@@ -43,7 +45,9 @@
 ***REMOVED******REMOVED***"at" : { "x" : 96, "y" : 256 },
 ***REMOVED******REMOVED***"labelOffset" : { "x" : 8, "y" : 35 }
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f5", "to" : "f4" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f5", "to" : "f4" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f4",
 ***REMOVED***  "type" : "HtmlDialogExit",
@@ -56,18 +60,15 @@
 ***REMOVED***  "name" : "find User",
 ***REMOVED***  "config" : {
 ***REMOVED******REMOVED***"processCall" : "X:findUser(String)",
+***REMOVED******REMOVED***"call" : {
+***REMOVED******REMOVED***  "map" : {
+***REMOVED******REMOVED******REMOVED***"param.username" : "in.query"
+***REMOVED******REMOVED***  }
+***REMOVED******REMOVED***},
 ***REMOVED******REMOVED***"output" : {
 ***REMOVED******REMOVED***  "map" : {
 ***REMOVED******REMOVED******REMOVED***"out" : "in",
 ***REMOVED******REMOVED******REMOVED***"out.user" : "result.user"
-***REMOVED******REMOVED***  }
-***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"call" : {
-***REMOVED******REMOVED***  "params" : [
-***REMOVED******REMOVED******REMOVED***{ "name" : "username", "type" : "String" }
-***REMOVED******REMOVED***  ],
-***REMOVED******REMOVED***  "map" : {
-***REMOVED******REMOVED******REMOVED***"param.username" : "in.query"
 ***REMOVED******REMOVED***  }
 ***REMOVED******REMOVED***}
 ***REMOVED***  },
@@ -90,9 +91,13 @@
 ***REMOVED******REMOVED***  "visual" : {
 ***REMOVED******REMOVED******REMOVED***"at" : { "x" : 256, "y" : 96 }
 ***REMOVED******REMOVED***  },
-***REMOVED******REMOVED***  "connect" : { "id" : "f11", "to" : "f1", "via" : [ { "x" : 352, "y" : 96 } ] }
+***REMOVED******REMOVED***  "connect" : [
+***REMOVED******REMOVED******REMOVED***{ "id" : "f11", "to" : "f1", "via" : [ { "x" : 352, "y" : 96 } ] }
+***REMOVED******REMOVED***  ]
 ***REMOVED******REMOVED***} ],
-***REMOVED***  "connect" : { "id" : "f2", "to" : "f1" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f2", "to" : "f1" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f8",
 ***REMOVED***  "type" : "HtmlDialogEventStart",
@@ -102,8 +107,10 @@
 ***REMOVED***  },
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 96, "y" : 160 },
-***REMOVED******REMOVED***"labelOffset" : { "x" : 13, "y" : 35 }
+***REMOVED******REMOVED***"labelOffset" : { "y" : 35 }
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f9", "to" : "f6", "via" : [ { "x" : 224, "y" : 160 } ] }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f9", "to" : "f6", "via" : [ { "x" : 224, "y" : 160 } ] }
+***REMOVED***  ]
 ***REMOVED***} ]
 }

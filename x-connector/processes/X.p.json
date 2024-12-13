@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "17D8046C692CA8F3",
   "kind" : "CALLABLE_SUB",
   "config" : {
@@ -10,7 +10,7 @@
 ***REMOVED***  "type" : "CallSubStart",
 ***REMOVED***  "name" : "findUser(String)",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"callSignature" : "findUser",
+***REMOVED******REMOVED***"signature" : "findUser",
 ***REMOVED******REMOVED***"input" : {
 ***REMOVED******REMOVED***  "params" : [
 ***REMOVED******REMOVED******REMOVED***{ "name" : "username", "type" : "String", "desc" : "The user which you want to find in X" }
@@ -26,15 +26,19 @@
 ***REMOVED******REMOVED***  "map" : {
 ***REMOVED******REMOVED******REMOVED***"result.user" : "in.user"
 ***REMOVED******REMOVED***  }
-***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"tags" : "CONNECTOR"
+***REMOVED******REMOVED***}
 ***REMOVED***  },
+***REMOVED***  "tags" : [
+***REMOVED******REMOVED***"CONNECTOR"
+***REMOVED***  ],
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 96, "y" : 64 },
 ***REMOVED******REMOVED***"labelOffset" : { "x" : 8, "y" : 43 },
 ***REMOVED******REMOVED***"icon" : "res:/webContent/icons/x.png?small"
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f4", "to" : "f3" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f4", "to" : "f3" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f1",
 ***REMOVED***  "type" : "CallSubEnd",
@@ -46,73 +50,85 @@
 ***REMOVED***  "type" : "RestClientCall",
 ***REMOVED***  "name" : "X API (X API v2)",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"path" : "/2/users/by/username/{username}",
-***REMOVED******REMOVED***"clientId" : "0b74edb8-5459-4ccc-aac7-505531e06398",
-***REMOVED******REMOVED***"clientErrorCode" : "ivy:error:rest:client",
-***REMOVED******REMOVED***"queryParams" : {
-***REMOVED******REMOVED***  "expansions" : "",
-***REMOVED******REMOVED***  "tweet.fields" : "",
-***REMOVED******REMOVED***  "user.fields" : ""
+***REMOVED******REMOVED***"target" : {
+***REMOVED******REMOVED***  "clientId" : "0b74edb8-5459-4ccc-aac7-505531e06398",
+***REMOVED******REMOVED***  "path" : "/2/users/by/username/{username}",
+***REMOVED******REMOVED***  "templateParams" : {
+***REMOVED******REMOVED******REMOVED***"username" : "in.username"
+***REMOVED******REMOVED***  },
+***REMOVED******REMOVED***  "queryParams" : {
+***REMOVED******REMOVED******REMOVED***"expansions" : "",
+***REMOVED******REMOVED******REMOVED***"tweet.fields" : "",
+***REMOVED******REMOVED******REMOVED***"user.fields" : ""
+***REMOVED******REMOVED***  }
 ***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"statusErrorCode" : "ivy:error:rest:client",
-***REMOVED******REMOVED***"responseMapping" : {
-***REMOVED******REMOVED***  "out.user" : "result.data"
-***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"templateParams" : {
-***REMOVED******REMOVED***  "username" : "in.username"
-***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"resultType" : "com.twitter.api.client.SingleUserLookupResponse"
+***REMOVED******REMOVED***"response" : {
+***REMOVED******REMOVED***  "entity" : {
+***REMOVED******REMOVED******REMOVED***"type" : "com.twitter.api.client.SingleUserLookupResponse",
+***REMOVED******REMOVED******REMOVED***"map" : {
+***REMOVED******REMOVED******REMOVED***  "out.user" : "result.data"
+***REMOVED******REMOVED******REMOVED***}
+***REMOVED******REMOVED***  }
+***REMOVED******REMOVED***}
 ***REMOVED***  },
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 224, "y" : 64 },
-***REMOVED******REMOVED***"size" : { "width" : 176, "height" : 60 },
+***REMOVED******REMOVED***"size" : { "width" : 176 },
 ***REMOVED******REMOVED***"icon" : "res:/webContent/icons/x.png"
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f2", "to" : "f1" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f2", "to" : "f1" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f5",
 ***REMOVED***  "type" : "RestClientCall",
 ***REMOVED***  "name" : "X API (X API v2)",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"path" : "/2/tweets/search/recent",
-***REMOVED******REMOVED***"clientId" : "0b74edb8-5459-4ccc-aac7-505531e06398",
-***REMOVED******REMOVED***"clientErrorCode" : "ivy:error:rest:client",
-***REMOVED******REMOVED***"queryParams" : {
-***REMOVED******REMOVED***  "expansions" : "",
-***REMOVED******REMOVED***  "tweet.fields" : "",
-***REMOVED******REMOVED***  "user.fields" : "",
-***REMOVED******REMOVED***  "query" : "in.query",
-***REMOVED******REMOVED***  "start_time" : "",
-***REMOVED******REMOVED***  "end_time" : "",
-***REMOVED******REMOVED***  "since_id" : "",
-***REMOVED******REMOVED***  "until_id" : "",
-***REMOVED******REMOVED***  "max_results" : "",
-***REMOVED******REMOVED***  "next_token" : "",
-***REMOVED******REMOVED***  "media.fields" : "",
-***REMOVED******REMOVED***  "place.fields" : "",
-***REMOVED******REMOVED***  "poll.fields" : ""
+***REMOVED******REMOVED***"target" : {
+***REMOVED******REMOVED***  "clientId" : "0b74edb8-5459-4ccc-aac7-505531e06398",
+***REMOVED******REMOVED***  "path" : "/2/tweets/search/recent",
+***REMOVED******REMOVED***  "templateParams" : {
+***REMOVED******REMOVED******REMOVED***"username" : ""
+***REMOVED******REMOVED***  },
+***REMOVED******REMOVED***  "queryParams" : {
+***REMOVED******REMOVED******REMOVED***"expansions" : "",
+***REMOVED******REMOVED******REMOVED***"tweet.fields" : "",
+***REMOVED******REMOVED******REMOVED***"user.fields" : "",
+***REMOVED******REMOVED******REMOVED***"query" : "in.query",
+***REMOVED******REMOVED******REMOVED***"start_time" : "",
+***REMOVED******REMOVED******REMOVED***"end_time" : "",
+***REMOVED******REMOVED******REMOVED***"since_id" : "",
+***REMOVED******REMOVED******REMOVED***"until_id" : "",
+***REMOVED******REMOVED******REMOVED***"max_results" : "",
+***REMOVED******REMOVED******REMOVED***"next_token" : "",
+***REMOVED******REMOVED******REMOVED***"media.fields" : "",
+***REMOVED******REMOVED******REMOVED***"place.fields" : "",
+***REMOVED******REMOVED******REMOVED***"poll.fields" : ""
+***REMOVED******REMOVED***  }
 ***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"statusErrorCode" : "ivy:error:rest:client",
-***REMOVED******REMOVED***"responseMapping" : {
-***REMOVED******REMOVED***  "out.tweets" : "result.data"
-***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"templateParams" : {
-***REMOVED******REMOVED***  "username" : ""
-***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"resultType" : "com.twitter.api.client.TweetSearchResponse"
+***REMOVED******REMOVED***"response" : {
+***REMOVED******REMOVED***  "entity" : {
+***REMOVED******REMOVED******REMOVED***"type" : "com.twitter.api.client.TweetSearchResponse",
+***REMOVED******REMOVED******REMOVED***"map" : {
+***REMOVED******REMOVED******REMOVED***  "out.tweets" : "result.data"
+***REMOVED******REMOVED******REMOVED***}
+***REMOVED******REMOVED***  }
+***REMOVED******REMOVED***}
 ***REMOVED***  },
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 224, "y" : 192 },
-***REMOVED******REMOVED***"size" : { "width" : 176, "height" : 60 },
+***REMOVED******REMOVED***"size" : { "width" : 176 },
 ***REMOVED******REMOVED***"icon" : "res:/webContent/icons/x.png"
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f8", "to" : "f7" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f8", "to" : "f7" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f6",
 ***REMOVED***  "type" : "CallSubStart",
 ***REMOVED***  "name" : "findTweets(String)",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"callSignature" : "findTweets",
+***REMOVED******REMOVED***"signature" : "findTweets",
 ***REMOVED******REMOVED***"input" : {
 ***REMOVED******REMOVED***  "params" : [
 ***REMOVED******REMOVED******REMOVED***{ "name" : "query", "type" : "String", "desc" : "The query to find tweets" }
@@ -128,15 +144,19 @@
 ***REMOVED******REMOVED***  "map" : {
 ***REMOVED******REMOVED******REMOVED***"result.tweets" : "in.tweets"
 ***REMOVED******REMOVED***  }
-***REMOVED******REMOVED***},
-***REMOVED******REMOVED***"tags" : "CONNECTOR"
+***REMOVED******REMOVED***}
 ***REMOVED***  },
+***REMOVED***  "tags" : [
+***REMOVED******REMOVED***"CONNECTOR"
+***REMOVED***  ],
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 96, "y" : 192 },
 ***REMOVED******REMOVED***"labelOffset" : { "x" : 16, "y" : 43 },
 ***REMOVED******REMOVED***"icon" : "res:/webContent/icons/x.png?small"
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f9", "to" : "f5" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f9", "to" : "f5" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f7",
 ***REMOVED***  "type" : "CallSubEnd",

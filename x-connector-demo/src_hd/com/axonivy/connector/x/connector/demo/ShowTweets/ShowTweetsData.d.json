@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "simpleName" : "ShowTweetsData",
+  "namespace" : "com.axonivy.connector.x.connector.demo.ShowTweets",
+  "isBusinessCaseData" : false,
+  "fields" : [ {
+***REMOVED***"name" : "query",
+***REMOVED***"type" : "String",
+***REMOVED***"modifiers" : [ "PERSISTENT" ]
+  }, {
+***REMOVED***"name" : "tweets",
+***REMOVED***"type" : "java.util.List<com.twitter.api.client.Tweet>",
+***REMOVED***"modifiers" : [ "PERSISTENT" ]
+  } ]
+}

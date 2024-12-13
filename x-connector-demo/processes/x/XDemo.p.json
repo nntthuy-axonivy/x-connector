@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "17D805DF41339F2C",
   "config" : {
 ***REMOVED***"data" : "com.axonivy.connector.x.connector.demo.Data"
@@ -9,15 +9,18 @@
 ***REMOVED***  "type" : "RequestStart",
 ***REMOVED***  "name" : "findUser.ivp",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"callSignature" : "findUser",
-***REMOVED******REMOVED***"outLink" : "findUser.ivp",
-***REMOVED******REMOVED***"tags" : "demo"
+***REMOVED******REMOVED***"signature" : "findUser"
 ***REMOVED***  },
+***REMOVED***  "tags" : [
+***REMOVED******REMOVED***"demo"
+***REMOVED***  ],
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 96, "y" : 64 },
 ***REMOVED******REMOVED***"labelOffset" : { "x" : 13, "y" : 38 }
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f3", "to" : "f5" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f3", "to" : "f5" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f1",
 ***REMOVED***  "type" : "TaskEnd",
@@ -29,12 +32,8 @@
 ***REMOVED***  "type" : "DialogCall",
 ***REMOVED***  "name" : "ShowUser",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"dialogId" : "com.axonivy.connector.x.connector.demo.ShowUser",
-***REMOVED******REMOVED***"startMethod" : "start(String)",
+***REMOVED******REMOVED***"dialog" : "com.axonivy.connector.x.connector.demo.ShowUser:start(String)",
 ***REMOVED******REMOVED***"call" : {
-***REMOVED******REMOVED***  "params" : [
-***REMOVED******REMOVED******REMOVED***{ "name" : "query", "type" : "String" }
-***REMOVED******REMOVED***  ],
 ***REMOVED******REMOVED***  "map" : {
 ***REMOVED******REMOVED******REMOVED***"param.query" : "\"AxonIvy\""
 ***REMOVED******REMOVED***  }
@@ -43,21 +42,26 @@
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 224, "y" : 64 }
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f2", "to" : "f1" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f2", "to" : "f1" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f9",
 ***REMOVED***  "type" : "RequestStart",
 ***REMOVED***  "name" : "findTweets.ivp",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"callSignature" : "findTweets",
-***REMOVED******REMOVED***"outLink" : "findTweets.ivp",
-***REMOVED******REMOVED***"tags" : "demo"
+***REMOVED******REMOVED***"signature" : "findTweets"
 ***REMOVED***  },
+***REMOVED***  "tags" : [
+***REMOVED******REMOVED***"demo"
+***REMOVED***  ],
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 96, "y" : 192 },
 ***REMOVED******REMOVED***"labelOffset" : { "x" : 27, "y" : 37 }
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f8", "to" : "f6" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f8", "to" : "f6" }
+***REMOVED***  ]
 ***REMOVED***}, {
 ***REMOVED***  "id" : "f7",
 ***REMOVED***  "type" : "TaskEnd",
@@ -69,12 +73,8 @@
 ***REMOVED***  "type" : "DialogCall",
 ***REMOVED***  "name" : "ShowTweets",
 ***REMOVED***  "config" : {
-***REMOVED******REMOVED***"dialogId" : "com.axonivy.connector.x.connector.demo.ShowTweets",
-***REMOVED******REMOVED***"startMethod" : "start(String)",
+***REMOVED******REMOVED***"dialog" : "com.axonivy.connector.x.connector.demo.ShowTweets:start(String)",
 ***REMOVED******REMOVED***"call" : {
-***REMOVED******REMOVED***  "params" : [
-***REMOVED******REMOVED******REMOVED***{ "name" : "query", "type" : "String" }
-***REMOVED******REMOVED***  ],
 ***REMOVED******REMOVED***  "map" : {
 ***REMOVED******REMOVED******REMOVED***"param.query" : "\"AxonIvy\""
 ***REMOVED******REMOVED***  }
@@ -83,6 +83,8 @@
 ***REMOVED***  "visual" : {
 ***REMOVED******REMOVED***"at" : { "x" : 224, "y" : 192 }
 ***REMOVED***  },
-***REMOVED***  "connect" : { "id" : "f4", "to" : "f7" }
+***REMOVED***  "connect" : [
+***REMOVED******REMOVED***{ "id" : "f4", "to" : "f7" }
+***REMOVED***  ]
 ***REMOVED***} ]
 }
