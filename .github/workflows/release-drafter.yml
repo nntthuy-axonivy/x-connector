@@ -4,13 +4,10 @@ on:
   push:
 ***REMOVED***branches:
 ***REMOVED***  - master
+***REMOVED***  - release/*
   pull_request:
 ***REMOVED***types: [opened, reopened, synchronize]
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
-  build:
-***REMOVED***uses: axonivy-market/github-workflows/.github/workflows/release-drafter.yml@v4
+  release_drafter:
+***REMOVED***uses: axonivy-market/github-workflows/.github/workflows/release-drafter.yml@v5
