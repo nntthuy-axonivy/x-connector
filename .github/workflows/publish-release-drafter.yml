@@ -1,0 +1,36 @@
+name: Publish Release Drafter
+
+on:
+  workflow_run:
+***REMOVED***workflows: ["Release-Build"]
+***REMOVED***types:
+***REMOVED***  - completed
+
+jobs:
+  publish_release_drafter:
+***REMOVED***if: ${{ github.event.workflow_run.conclusion == 'success' }}
+***REMOVED***uses: axonivy-market/github-workflows/.github/workflows/publish-release-drafter.yml@v5
+***REMOVED***# The following input parameters are available:
+***REMOVED***#
+***REMOVED***# - tag: (optional) Specifies the release tag (e.g., 'v10.0.0').
+***REMOVED***#***REMOVED******REMOVED***If not provided, the most recent tag in the repository will be used by default.
+***REMOVED***#***REMOVED******REMOVED***This ensures the workflow runs without requiring explicit tag input.
+***REMOVED***#
+***REMOVED***# - commitish: (optional) Indicates the branch name for the release.
+***REMOVED***#***REMOVED******REMOVED******REMOVED***  If not provided, it defaults to 'master'. For versioned releases, 
+***REMOVED***#***REMOVED******REMOVED******REMOVED***  the workflow automatically checks for a corresponding branch 
+***REMOVED***#***REMOVED******REMOVED******REMOVED***  (e.g., 'release/10.0' for version 10.0) and uses it if available.
+***REMOVED***#***REMOVED******REMOVED******REMOVED***  This allows the workflow to execute with default branch behavior.
+***REMOVED***#
+***REMOVED***# - publish: (optional) Controls whether the release is published automatically.
+***REMOVED***#***REMOVED******REMOVED******REMOVED***Defaults to 'true'. Set to 'false' to create a draft release 
+***REMOVED***#***REMOVED******REMOVED******REMOVED***without immediate publication.
+***REMOVED***#
+***REMOVED***# Note: Both 'tag' and 'commitish' are configured to run with sensible defaults,
+***REMOVED***#***REMOVED***   so manual input is not required unless custom values are needed.
+***REMOVED***#
+***REMOVED***# Uncomment and modify the inputs as needed:
+***REMOVED***# with:
+***REMOVED***#   tag: v10.0.0
+***REMOVED***#   commitish: release/10.0
+***REMOVED***#   publish: false
