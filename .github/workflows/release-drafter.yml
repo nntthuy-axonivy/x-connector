@@ -10,4 +10,4 @@ on:
 
 jobs:
   release_drafter:
-***REMOVED***uses: axonivy-market/github-workflows/.github/workflows/release-drafter.yml@v5
+***REMOVED***uses: axonivy-market/github-workflows/.github/workflows/release-drafter.yml@v6
